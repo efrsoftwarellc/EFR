@@ -1,0 +1,99 @@
+﻿html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #999999);
+	height: auto;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+.button {
+	cursor: pointer;
+	border: 3px solid #000000;
+	border-collapse: collapse;
+	display: table-cell;
+	padding: 20px;
+	text-align: center;
+	width: 100px;
+	font-weight: 600;
+}
+
+.row-button-grid .col-xs-6 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.btn {
+	font-weight: 600;
+	width: 100%;
+	padding: 6px 6px;
+	height: 72px;
+	font-variant: small-caps
+}
+
+.btn-red {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #ff0000);
+	border-color: #660000;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #990000);
+}
+
+.btn-green {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #00ff00);
+	border-color: #006600;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #009900);
+}
+
+.btn-blue {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #0000ff);
+	border-color: #000066;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
+	color: #ffffff;
+	background: linear-gradient(to bottom right, #000000, #000099);
+}
+
