@@ -231,6 +231,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
+    <Folder Include="Login\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
