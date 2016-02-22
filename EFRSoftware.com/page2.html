@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<script runat="server">
+  protected override void OnLoad(EventArgs args) {
+    base.OnLoad(args);
+
+    var files = Request.Files;
+    for (int i = 0; i < files.Count; i++) {
+      var file = files[i];
+      string fileName = String.Format("{0:yyyyMMdd_hhmmss_fff}{1}", DateTime.UtcNow, Path.GetExtension(file.FileName));
+      string path = Path.Combine(Server.MapPath("~/Uploads"), fileName);
+      file.SaveAs(path);
+      Response.Write("Uploaded '" + Path.GetFileName(file.FileName) + "'<br/>");
+    }
+  }
+</script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EFR Software</title>
+  <!--<link href="Content/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="Content/bootstrap-theme.min.css" rel="stylesheet">-->
+  <link href="Content/bootstrap.css" rel="stylesheet">
+  <link href="Content/Site.css" rel="stylesheet">
+  <script src="Scripts/jquery-1.10.2.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+</head>
+
+<body>
+  <form id="form1" enctype="multipart/form-data" method="post">
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Hazard Surveillance Survey</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4" style="text-align: center;">
+              <asp:Image ID="imgLogo" runat="server" AlternateText="EFR Logo" CssClass="img-responsive" ImageUrl="~/Images/Logo.jpg" />
+            </div>
+          </div>
+          <div class="col-xs-12 survey">
+            <h4>Survey Categories</h4>
+          </div>
+
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Communication
+                <br>Education</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-green">Electrical
+                <br>Safety</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-purple">EDC
+                <br>Enviroment
+                <br>of Care</button>
+            </a>
+          </div>
+          <a href="team_member.html" target="_self">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <button type="button" class="btn btn-yellow">Hazardous
+                <br>Materials</button>
+          </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Infection
+                <br>Control</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-tan">Kitchen
+                <br>Nutrition</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Lab</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-blue">Life
+                <br>Safety</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Pharmacy
+                <br>Meds</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Radiology</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Technology</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-olive">Medical
+                <br>Records</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-blue">Patient
+                <br>Tracer</button>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="team_member.html" target="_self">
+              <button type="button" class="btn btn-turq">Bio-Medical
+                <br>Equipment</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div>
+      <input id="fileInput" runat="server" type="file" accept="image/*" capture="camera" />
+      <button type="submit">Submit</button>
+    </div> -->
+
+  </form>
+</body>
+
+</html>
