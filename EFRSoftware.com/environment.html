@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<script runat="server">
+  protected override void OnLoad(EventArgs args) {
+    base.OnLoad(args);
+
+    var files = Request.Files;
+    for (int i = 0; i < files.Count; i++) {
+      var file = files[i];
+      string fileName = String.Format("{0:yyyyMMdd_hhmmss_fff}{1}", DateTime.UtcNow, Path.GetExtension(file.FileName));
+      string path = Path.Combine(Server.MapPath("~/Uploads"), fileName);
+      file.SaveAs(path);
+      Response.Write("Uploaded '" + Path.GetFileName(file.FileName) + "'<br/>");
+    }
+  }
+</script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EFR Software - Survey Team Member</title>
+  <!--<link href="Content/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="Content/bootstrap-theme.min.css" rel="stylesheet">-->
+  <link href="Content/bootstrap.css" rel="stylesheet">
+  <link href="Content/Site.css" rel="stylesheet">
+  <script src="Scripts/jquery-1.10.2.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center">Hazard Surveillance Survey</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-responsive">
+          <thead>
+            <h4 class="purple">EOC - ENVIRONMENT OF CARE</h4>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Work area cluttered and/or unorganized
+              </td>
+              <td>
+                <input type="radio" name="q1">P</radio>
+
+                <input type="radio" name="q1">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Trip hazard and/or falling object hazard noted in area
+              </td>
+              <td>
+                <input type="radio" name="q2">P</radio>
+
+                <input type="radio" name="q2">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Spills not cleaned up promptly and/or wet floor signs not in place in area of need
+              </td>
+              <td>
+                <input type="radio" name="q3">P</radio>
+
+                <input type="radio" name="q3">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Equipment in use without proper guarding and/or safety device
+              </td>
+              <td>
+                <input type="radio" name="q4">P</radio>
+
+                <input type="radio" name="q4">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Supplies not stored safely on shelving units </td>
+              <td>
+                <input type="radio" name="q5">P</radio>
+
+                <input type="radio" name="q5">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Area lighting inadequate and/or bulbs missing/burned out </td>
+              <td>
+                <input type="radio" name="q6">P</radio>
+
+                <input type="radio" name="q6">F</radio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Corridor handrails missing or in poor repair </td>
+              <td>
+                <input type="radio" name="q7">P</radio>
+
+                <input type="radio" name="q7">F</radio>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="centered">
+          <a href="#">
+            <button type="button" class="btn btn-primary btn-default smaller-btn">Submit Results
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
