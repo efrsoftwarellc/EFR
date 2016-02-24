@@ -15,8 +15,6 @@ Environmental Services    #B478B8   rgb(180,120,184)
 
 ***********************************************/
 
-
-}
 html {
   position: relative;
   min-height: 100%;
@@ -90,7 +88,7 @@ button {
   padding-left: 0px;
   padding-right: 0px;
 }
-.btn {
+.row-button-grid .btn {
   font-weight: 600;
   width: 100%;
   padding: 6px 6px;
