@@ -1,18 +1,5 @@
 <!DOCTYPE html>
-<script runat="server">
-  protected override void OnLoad(EventArgs args) {
-    base.OnLoad(args);
 
-    var files = Request.Files;
-    for (int i = 0; i < files.Count; i++) {
-      var file = files[i];
-      string fileName = String.Format("{0:yyyyMMdd_hhmmss_fff}{1}", DateTime.UtcNow, Path.GetExtension(file.FileName));
-      string path = Path.Combine(Server.MapPath("~/Uploads"), fileName);
-      file.SaveAs(path);
-      Response.Write("Uploaded '" + Path.GetFileName(file.FileName) + "'<br/>");
-    }
-  }
-</script>
 <html lang="en">
 
 <head>
