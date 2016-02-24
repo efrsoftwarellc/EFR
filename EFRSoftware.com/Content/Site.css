@@ -84,9 +84,9 @@ button {
   width: 100px;
   font-weight: 600;
 }
-.row-button-grid .col-xs-6 {
-  padding-left: 0px;
-  padding-right: 0px;
+.row-button-grid {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 .row-button-grid .btn {
   font-weight: 600;
