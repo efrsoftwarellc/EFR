@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" %>
-
 <%@ Import Namespace="System.IO" %>
 <!DOCTYPE html>
 <script runat="server">
@@ -28,6 +27,7 @@
 	<title>EFR Software</title>
 	<link href="Content/bootstrap.min.css" rel="stylesheet">
 	<link href="Content/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="Content/bootstrap-switch.css" rel="stylesheet">
 	<link href="Content/Site.css" rel="stylesheet">
 	<script src="Scripts/jquery-1.10.2.min.js"></script>
 	<script src="Scripts/bootstrap.min.js"></script>
@@ -44,16 +44,23 @@
 				</div>
 				<div class="panel-body">
 					<div class="row">
+						<div class="col-xs-12">
+							<input id="survey1" class="survey-switch" type="checkbox" />
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-xs-4" style="text-align: center;"></div>
 						<div class="col-xs-4" style="text-align: center;">
 							<asp:Image ID="imgLogo" runat="server" AlternateText="EFR Logo" CssClass="img-responsive" ImageUrl="~/Images/Logo.jpg" />
 						</div>
 						<div class="col-xs-4" style="text-align: center;"></div>
 					</div>
-					<div class="col-xs-12">
-						The quick brown fox jumps over the lazy dog.
-						The quick brown fox jumps over the lazy dog.
-						The quick brown fox jumps over the lazy dog.
+					<div class="row">
+						<div class="col-xs-12">
+							The quick brown fox jumps over the lazy dog.
+							The quick brown fox jumps over the lazy dog.
+							The quick brown fox jumps over the lazy dog.
+						</div>
 					</div>
 					<div class="row row-button-grid">
 						<div class="col-xs-6 col-sm-4 col-md-3">
@@ -122,4 +129,15 @@
 
 	</form>
 </body>
+<script type="text/javascript">
+	var surveySwitchOptions = {
+		onText: "Pass",
+		offText: "Fail",
+		onColor: "success",
+		offColor: "danger",
+		handleWidth: "60px",
+		labelWidth: "20px",
+	};
+	$("input.survey-switch[type=\"checkbox\"]").not("[data-switch-no-init]").bootstrapSwitch(surveySwitchOptions);
+</script>
 </html>
