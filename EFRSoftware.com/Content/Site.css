@@ -74,7 +74,7 @@ textarea {
   background: linear-gradient(to bottom right, #000, #B478B8);
   border-color: #006;
 }
-button {
+.test-button {
   cursor: pointer;
   border: 3px solid #000;
   border-collapse: collapse;

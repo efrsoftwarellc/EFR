@@ -64,6 +64,10 @@
 							<input id="survey1" class="survey-result" type="checkbox" />
 							<input id="survey2" class="survey-result" type="checkbox" />
 							<input id="survey3" class="survey-result" type="checkbox" />
+							<button type="button" class="btn default">
+								<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+								<span class="sr-only">Add Photo</span>
+							</button>
 						</div>
 					</div>
 					<div class="row">
@@ -171,6 +175,6 @@
 		//width: "25",
 		//height: "10",
 	};
-	$("input[type=\"checkbox\"]").bootstrapToggle(surveyResultOptions);
+	$("input.survey-result[type=\"checkbox\"]").bootstrapToggle(surveyResultOptions);
 </script>
 </html>
