@@ -15,8 +15,6 @@ Environmental Services    #B478B8   rgb(180,120,184)
 
 ***********************************************/
 
-
-}
 html {
   position: relative;
   min-height: 100%;
@@ -76,7 +74,7 @@ textarea {
   background: linear-gradient(to bottom right, #000, #B478B8);
   border-color: #006;
 }
-button {
+.test-button {
   cursor: pointer;
   border: 3px solid #000;
   border-collapse: collapse;
@@ -86,11 +84,11 @@ button {
   width: 100px;
   font-weight: 600;
 }
-.row-button-grid .col-xs-6 {
-  padding-left: 0px;
-  padding-right: 0px;
+.row-button-grid {
+  margin-right: 0px;
+  margin-left: 0px;
 }
-.btn {
+.row-button-grid .btn {
   font-weight: 600;
   width: 100%;
   padding: 6px 6px;
