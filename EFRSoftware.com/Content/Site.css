@@ -1,99 +1,266 @@
-﻿html {
-	position: relative;
-	min-height: 100%;
-}
+/**********************************************
+Color Palette
 
+Logo (Blue)               #0D0CED   rgb(12,12,237)
+General Safety            #668B7A   rgb(102,139,122)
+Hazard Surveillance       #DC7213   rgb(220,114,19)
+Emergency Preparedness    #E0270B   rgb(224,39,11)
+Life Safety               #6434BE   rgb(100,52,190)
+Medical Equipment         #0FE0DE   rgb(15,224,222)
+Hazard Materials          #DFE821   rgb(223,232,33)
+Security                  #969B95   rgb(150,155,149)
+Utility Systems           #53C330   rgb(83,195,48)
+Food Service              #DCB256   rgb(220,178,86)
+Environmental Services    #B478B8   rgb(180,120,184)
+
+***********************************************/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(to bottom, #ffffff, #999999);
-	height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #fff, #999);
+  height: auto;
+  max-width: 1080px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+h3,
+h4 {
+  font-size: 1em;
+  line-height: 1em;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-	white-space: normal;
+  white-space: normal;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-	max-width: 280px;
+  max-width: 280px;
 }
-
-.button {
-	cursor: pointer;
-	border: 3px solid #000000;
-	border-collapse: collapse;
-	display: table-cell;
-	padding: 20px;
-	text-align: center;
-	width: 100px;
-	font-weight: 600;
+.col-xs-6,
+.col-sm-4,
+.col-md-3 {
+  padding: 0;
 }
-
-.row-button-grid .col-xs-6 {
-	padding-left: 0px;
-	padding-right: 0px;
+.purple {
+  height: 3em;
+  margin: 0;
+  padding: 1em 0 0 1em;
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #B478B8);
+  border-color: #006;
 }
-
-.btn {
-	font-weight: 600;
-	width: 100%;
-	padding: 6px 6px;
-	height: 72px;
-	font-variant: small-caps
+.test-button {
+  cursor: pointer;
+  border: 3px solid #000;
+  border-collapse: collapse;
+  display: table-cell;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  font-weight: 600;
 }
+.row-button-grid {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.row-button-grid .btn {
+  font-weight: 600;
+  width: 100%;
+  padding: 6px 6px;
+  height: 72px;
+  font-variant: small-caps;
+}
+.smaller-btn {
+  height: 3em;
+  width: 10em;
+  line-height: 1em;
+  border-radius: 10px;
+}
+.centered {
+  text-align: center;
+}
+.tall {
+  max-height: 100%;
+}
+.wideCol {
+  width: 75%;
+}
+.narrowCol {}
 
+/**********************************************
+Button Colors (same as palette)
+
+Logo (Blue)               #0D0CED   rgb(12,12,237)
+General Safety            #668B7A   rgb(102,139,122)
+Hazard Surveillance       #DC7213   rgb(220,114,19)
+Emergency Preparedness    #E0270B   rgb(224,39,11)
+Life Safety               #6434BE   rgb(100,52,190)
+Medical Equipment         #0FE0DE   rgb(15,224,222)
+Hazard Materials          #DFE821   rgb(223,232,33)
+Security                  #969B95   rgb(150,155,149)
+Utility Systems           #53C330   rgb(83,195,48)
+Food Service              #DCB256   rgb(220,178,86)
+Environmental Services    #B478B8   rgb(180,120,184)
+
+***********************************************/
+
+/* Emergency Preparedness button */
 .btn-red {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #ff0000);
-	border-color: #660000;
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #E0270B);
 }
-
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active,
 .btn-red.active {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #990000);
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #E0270B);
 }
 
+/* Utility Systems button */
 .btn-green {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #00ff00);
-	border-color: #006600;
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #53C330);
 }
-
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active,
 .btn-green.active {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #009900);
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #53C330);
 }
 
+/* Life Safety button */
 .btn-blue {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #0000ff);
-	border-color: #000066;
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #0D0CED);
 }
-
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active,
 .btn-blue.active {
-	color: #ffffff;
-	background: linear-gradient(to bottom right, #000000, #000099);
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #0D0CED);
 }
 
+/* Hazard Materials button */
+.btn-yellow {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DFE821);
+}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DFE821);
+}
+
+/* Security button */
+.btn-grey {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #969B95);
+}
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active,
+.btn-grey.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #969B95);
+}
+
+/* Food Service button */
+.btn-tan {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DCB256);
+}
+.btn-tan:hover,
+.btn-tan:focus,
+.btn-tan:active,
+.btn-tan.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DCB256);
+}
+
+/* Environmental Services button */
+.btn-purple {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #B478B8);
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active,
+.btn-purple.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #B478B8);
+}
+
+/* Hazard Surveillance button */
+.btn-orange {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DC7213);
+}
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #DC7213);
+}
+
+/* General Safety button */
+.btn-olive {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #668B7A);
+}
+.btn-olive:hover,
+.btn-olive:focus,
+.btn-olive:active,
+.btn-olive.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #668B7A);
+}
+
+/* Medical Equipment button */
+.btn-turq {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #0FE0DE);
+}
+.btn-turq:hover,
+.btn-turq:focus,
+.btn-turq:active,
+.btn-turq.active {
+  color: #fff;
+  background: linear-gradient(to bottom right, #000, #0FE0DE);
+}
+.camera {
+  max-width: 10%;
+  float: right;
+  padding-top: 1em;
+  margin-right: 1em;
+}
