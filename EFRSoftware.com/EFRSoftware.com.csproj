@@ -177,6 +177,7 @@
     <Content Include="Content\bootstrap2-toggle.css" />
     <Content Include="Content\bootstrap2-toggle.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="start.html" />
     <Content Include="environment.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
