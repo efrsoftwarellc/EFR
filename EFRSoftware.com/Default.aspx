@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" %>
 <%@ Import Namespace="System.IO" %>
 <!DOCTYPE html>
 <script runat="server">
@@ -33,8 +33,6 @@
 	<link href="Content/bootstrap.css" rel="stylesheet">
 	<!--<link href="Content/bootstrap-theme.css" rel="stylesheet">-->
 	<script src="Scripts/bootstrap.min.js"></script>
-	
-	<link href="Content/Site.css" rel="stylesheet">
 
 	<!-- Bootstrap Switch -->
 	<!--<link href="Content/bootstrap-switch.min.css" rel="stylesheet">-->
@@ -47,12 +45,10 @@
 	<script src="Scripts/bootstrap-toggle.min.js"></script>
 	<!--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>-->
 
-
+	<link href="Content/Site.css" rel="stylesheet">
 </head>
 <body>
 	<form id="form1" enctype="multipart/form-data" method="post">
-
-
 		<div class="container">
 			<div class="panel panel-default">
 				<div class="panel-heading">

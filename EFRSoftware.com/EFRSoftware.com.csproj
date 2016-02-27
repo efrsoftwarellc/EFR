@@ -168,6 +168,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BDJ Hospital.png" />
+    <Content Include="camera.png" />
     <Content Include="Content\bootstrap-switch.css" />
     <Content Include="Content\bootstrap-switch.min.css" />
     <Content Include="Content\bootstrap-toggle.css" />
@@ -176,6 +178,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap2-toggle.css" />
     <Content Include="Content\bootstrap2-toggle.min.css" />
+    <Content Include="Content\lightbox.css" />
+    <Content Include="Content\lightbox.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="environment.html" />
     <Content Include="favicon.ico" />
@@ -184,6 +188,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\Logo.jpg" />
     <Content Include="page2.html" />
+    <Content Include="Photo.aspx" />
+    <Content Include="PhotoResult.aspx" />
     <Content Include="Scripts\bootstrap-switch.js" />
     <Content Include="Scripts\bootstrap-switch.min.js" />
     <Content Include="Scripts\bootstrap-toggle.js" />
@@ -207,6 +213,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.js" />
+    <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -246,6 +254,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\lightbox.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
