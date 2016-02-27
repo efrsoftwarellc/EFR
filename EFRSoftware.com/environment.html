@@ -12,6 +12,8 @@
   <link href="Content/Site.css" rel="stylesheet">
   <script src="Scripts/jquery-1.10.2.min.js"></script>
   <script src="Scripts/bootstrap.min.js"></script>
+  <link href="Content/bootstrap-toggle.css" rel="stylesheet">
+  <script src="Scripts/bootstrap-toggle.min.js"></script>
   <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
   <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
 </head>
@@ -30,14 +32,12 @@
           </thead>
           <tbody>
             <tr>
-              <td style="width:75%">
+              <td>
                 Work area cluttered and/or unorganized
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
-              <td style="width:25%">
-                <input type="radio" name="q1" alt="Pass">Pass</radio>
-
-                <input type="radio" name="q1">Fail</radio>
+              <td class="narrowCol">
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -46,9 +46,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q2">Pass</radio>
-
-                <input type="radio" name="q2">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -57,9 +55,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q3">Pass</radio>
-
-                <input type="radio" name="q3">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -68,9 +64,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q4">Pass</radio>
-
-                <input type="radio" name="q4">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -79,9 +73,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q5">Pass</radio>
-
-                <input type="radio" name="q5">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -90,9 +82,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q6">Pass</radio>
-
-                <input type="radio" name="q6">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
             <tr>
@@ -101,9 +91,7 @@
                 <a href="photo.aspx"><img src="camera.png" alt="camera icon" class="camera"></a>
               </td>
               <td>
-                <input type="radio" name="q7">Pass</radio>
-
-                <input type="radio" name="q7">Fail</radio>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Pass" data-off="Fail" data-onstyle="success" data-offstyle="danger" data-width="25" data-height="10">
               </td>
             </tr>
           </tbody>

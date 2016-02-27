@@ -106,6 +106,13 @@ button {
 .centered {
   text-align: center;
 }
+.tall {
+  max-height: 100%;
+}
+.wideCol {
+  width: 75%;
+}
+.narrowCol {}
 
 /**********************************************
 Button Colors (same as palette)
@@ -253,6 +260,9 @@ Environmental Services    #B478B8   rgb(180,120,184)
   color: #fff;
   background: linear-gradient(to bottom right, #000, #0FE0DE);
 }
-input[type="radio"] {
-  margin: .45em;
+.camera {
+  max-width: 10%;
+  float: right;
+  padding-top: 1em;
+  margin-right: 1em;
 }
