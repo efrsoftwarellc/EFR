@@ -19,15 +19,18 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   padding: 0;
   margin: 0 auto;
   margin-top: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
   background: linear-gradient(to bottom, #fff, #999);
   height: auto;
   max-width: 1080px;
 }
+
 h1,
 h2,
 h3,
@@ -36,36 +39,45 @@ h5,
 h6 {
   text-transform: uppercase;
 }
-h3,
-h4 {
+
+h1,
+h2 {
   font-size: 1em;
   line-height: 1em;
 }
 
+
 /* Set padding to keep content from hitting the edges */
+
 .body-content {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+
 .dl-horizontal dt {
   white-space: normal;
 }
 
+
 /* Set width on the form input elements since they're 100% wide by default */
+
 input,
 select,
 textarea {
   max-width: 280px;
 }
+
 .col-xs-6,
 .col-sm-4,
 .col-md-3 {
   padding: 0;
 }
+
 .purple {
   height: 3em;
   margin: 0;
@@ -74,7 +86,8 @@ textarea {
   background: linear-gradient(to bottom right, #000, #B478B8);
   border-color: #006;
 }
-.test-button {
+
+button {
   cursor: pointer;
   border: 3px solid #000;
   border-collapse: collapse;
@@ -84,33 +97,46 @@ textarea {
   width: 100px;
   font-weight: 600;
 }
-.row-button-grid {
-  margin-right: 0px;
-  margin-left: 0px;
+
+.row-button-grid .col-xs-6 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.row-button-grid .btn {
+
+.btn {
   font-weight: 600;
   width: 100%;
   padding: 6px 6px;
   height: 72px;
   font-variant: small-caps;
 }
+
 .smaller-btn {
   height: 3em;
   width: 10em;
   line-height: 1em;
   border-radius: 10px;
 }
+
 .centered {
   text-align: center;
 }
+
 .tall {
   max-height: 100%;
 }
+
 .wideCol {
   width: 75%;
 }
-.narrowCol {}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  padding-top: 1em;
+}
+
 
 /**********************************************
 Button Colors (same as palette)
@@ -129,11 +155,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
 
 ***********************************************/
 
+
 /* Emergency Preparedness button */
+
 .btn-red {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #E0270B);
 }
+
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active,
@@ -142,11 +171,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #E0270B);
 }
 
+
 /* Utility Systems button */
+
 .btn-green {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #53C330);
 }
+
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active,
@@ -155,11 +187,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #53C330);
 }
 
+
 /* Life Safety button */
+
 .btn-blue {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #0D0CED);
 }
+
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active,
@@ -168,11 +203,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #0D0CED);
 }
 
+
 /* Hazard Materials button */
+
 .btn-yellow {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #DFE821);
 }
+
 .btn-yellow:hover,
 .btn-yellow:focus,
 .btn-yellow:active,
@@ -181,11 +219,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #DFE821);
 }
 
+
 /* Security button */
+
 .btn-grey {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #969B95);
 }
+
 .btn-grey:hover,
 .btn-grey:focus,
 .btn-grey:active,
@@ -194,11 +235,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #969B95);
 }
 
+
 /* Food Service button */
+
 .btn-tan {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #DCB256);
 }
+
 .btn-tan:hover,
 .btn-tan:focus,
 .btn-tan:active,
@@ -207,11 +251,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #DCB256);
 }
 
+
 /* Environmental Services button */
+
 .btn-purple {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #B478B8);
 }
+
 .btn-purple:hover,
 .btn-purple:focus,
 .btn-purple:active,
@@ -220,11 +267,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #B478B8);
 }
 
+
 /* Hazard Surveillance button */
+
 .btn-orange {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #DC7213);
 }
+
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active,
@@ -233,11 +283,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #DC7213);
 }
 
+
 /* General Safety button */
+
 .btn-olive {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #668B7A);
 }
+
 .btn-olive:hover,
 .btn-olive:focus,
 .btn-olive:active,
@@ -246,11 +299,14 @@ Environmental Services    #B478B8   rgb(180,120,184)
   background: linear-gradient(to bottom right, #000, #668B7A);
 }
 
+
 /* Medical Equipment button */
+
 .btn-turq {
   color: #fff;
   background: linear-gradient(to bottom right, #000, #0FE0DE);
 }
+
 .btn-turq:hover,
 .btn-turq:focus,
 .btn-turq:active,
@@ -258,9 +314,22 @@ Environmental Services    #B478B8   rgb(180,120,184)
   color: #fff;
   background: linear-gradient(to bottom right, #000, #0FE0DE);
 }
+
+.splashButtons {
+  margin-top: 1.5em;
+}
+
 .camera {
   max-width: 10%;
   float: right;
   padding-top: 1em;
   margin-right: 1em;
 }
+
+.glyphicon {
+  font-size: 2em;
+  float: right;
+  padding: 0 .5em .3em 0;
+}
+
+@media only screen and (max-width: 991px) {}

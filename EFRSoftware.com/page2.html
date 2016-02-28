@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<script runat="server">
+  protected override void OnLoad(EventArgs args) {
+    base.OnLoad(args);
+
+    var files = Request.Files;
+    for (int i = 0; i < files.Count; i++) {
+      var file = files[i];
+      string fileName = String.Format("{0:yyyyMMdd_hhmmss_fff}{1}", DateTime.UtcNow, Path.GetExtension(file.FileName));
+      string path = Path.Combine(Server.MapPath("~/Uploads"), fileName);
+      file.SaveAs(path);
+      Response.Write("Uploaded '" + Path.GetFileName(file.FileName) + "'<br/>");
+    }
+  }
+</script>
+
 <html lang="en">
 
 <head>
@@ -22,111 +37,105 @@
     <div class="container">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title text-center" role="heading">Hazard Surveillance Survey</h3>
+          <h1class="panel-title text-center" role="heading">Hazard Surveillance Survey</h1>
         </div>
         <div class="panel-body">
           <div class="row">
-
+            <div class="col-xs-4" style="text-align: center;">
+              <asp:Image ID="imgLogo" runat="server" AlternateText="EFR Logo" CssClass="img-responsive" ImageUrl="~/Images/Logo.jpg" />
+            </div>
           </div>
-          <div class="col-xs-12 tall">
-            <h4 class="text-center">Survey Categories</h4>
+          <div class="col-xs-12">
+            <h2 class="text-center">Survey Categories</h2>
           </div>
 
-          <div class="row row-button-grid">
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Communication
                 <br>Education</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-green">Electrical
                 <br>Safety</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-purple">EDC
                 <br>Enviroment
                 <br>of Care</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
-            <a href="team_member.html" target="_self">
+          <a href="team_member.html" target="_self">
+            <div class="col-xs-6 col-sm-4 col-md-3">
               <button role="button" type="button" class="btn btn-yellow">Hazardous
                 <br>Materials</button>
-            </a>
+          </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Infection
                 <br>Control</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-tan">Kitchen
                 <br>Nutrition</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Lab</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button type="button" class="btn btn-blue">Life
                 <br>Safety</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button type="button" class="btn btn-olive">Pharmacy
                 <br>Meds</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Radiology</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Technology</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-olive">Medical
                 <br>Records</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-blue">Patient
                 <br>Tracer</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <a href="team_member.html" target="_self">
               <button role="button" type="button" class="btn btn-turq">Bio-Medical
                 <br>Equipment</button>
             </a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-4">
-            <a href="team_member.html" target="_self">
-              <button role="button" type="button" class="btn btn-blue">BACK TO
-                <br>HOMEPAGE
-              </button>
-            </a>
-          </div>
-          </div>
         </div>
       </div>
+    </div>
 
-      <!--<div>
+    <!--<div>
       <input id="fileInput" runat="server" type="file" accept="image/*" capture="camera" />
       <button type="submit">Submit</button>
     </div> -->
