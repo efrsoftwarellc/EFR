@@ -185,7 +185,6 @@
     <Content Include="Images\Logo_sm.png" />
     <Content Include="Login.html" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
-    <Content Include="start.html" />
     <Content Include="environment.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
