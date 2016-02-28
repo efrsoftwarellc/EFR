@@ -176,7 +176,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap2-toggle.css" />
     <Content Include="Content\bootstrap2-toggle.min.css" />
+    <Content Include="Content\datepicker.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\Hospital.png" />
+    <Content Include="Images\Hospital_200.png" />
+    <Content Include="Images\Hospital_sm.png" />
+    <Content Include="Images\Logo_200.png" />
+    <Content Include="Images\Logo_sm.png" />
+    <Content Include="Login.html" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="start.html" />
     <Content Include="environment.html" />
     <Content Include="favicon.ico" />
